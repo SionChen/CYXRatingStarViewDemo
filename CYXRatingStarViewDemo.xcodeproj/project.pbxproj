@@ -13,6 +13,10 @@
 		55284AF3219D5484003EE20C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55284AF2219D5484003EE20C /* Assets.xcassets */; };
 		55284AF6219D5484003EE20C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55284AF4219D5484003EE20C /* LaunchScreen.storyboard */; };
 		55284AF9219D5484003EE20C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55284AF8219D5484003EE20C /* main.m */; };
+		55284B03219D54DB003EE20C /* starUnselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55284B01219D54DB003EE20C /* starUnselected@2x.png */; };
+		55284B04219D54DB003EE20C /* starUnselected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55284B02219D54DB003EE20C /* starUnselected@3x.png */; };
+		55284B07219D54EF003EE20C /* CYXRatingStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55284B06219D54EF003EE20C /* CYXRatingStarView.m */; };
+		55284B0A219D5728003EE20C /* CYXRatingStarMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55284B09219D5728003EE20C /* CYXRatingStarMaskView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,12 @@
 		55284AF5219D5484003EE20C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55284AF7219D5484003EE20C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55284AF8219D5484003EE20C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		55284B01219D54DB003EE20C /* starUnselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "starUnselected@2x.png"; sourceTree = "<group>"; };
+		55284B02219D54DB003EE20C /* starUnselected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "starUnselected@3x.png"; sourceTree = "<group>"; };
+		55284B05219D54EF003EE20C /* CYXRatingStarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYXRatingStarView.h; sourceTree = "<group>"; };
+		55284B06219D54EF003EE20C /* CYXRatingStarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYXRatingStarView.m; sourceTree = "<group>"; };
+		55284B08219D5728003EE20C /* CYXRatingStarMaskView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYXRatingStarMaskView.h; sourceTree = "<group>"; };
+		55284B09219D5728003EE20C /* CYXRatingStarMaskView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYXRatingStarMaskView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 		55284AE8219D5481003EE20C /* CYXRatingStarViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				55284AFF219D54B5003EE20C /* CYXRatingStarView */,
 				55284AE9219D5481003EE20C /* AppDelegate.h */,
 				55284AEA219D5481003EE20C /* AppDelegate.m */,
 				55284AEC219D5481003EE20C /* ViewController.h */,
@@ -69,6 +80,27 @@
 				55284AF8219D5484003EE20C /* main.m */,
 			);
 			path = CYXRatingStarViewDemo;
+			sourceTree = "<group>";
+		};
+		55284AFF219D54B5003EE20C /* CYXRatingStarView */ = {
+			isa = PBXGroup;
+			children = (
+				55284B00219D54B5003EE20C /* Image */,
+				55284B05219D54EF003EE20C /* CYXRatingStarView.h */,
+				55284B06219D54EF003EE20C /* CYXRatingStarView.m */,
+				55284B08219D5728003EE20C /* CYXRatingStarMaskView.h */,
+				55284B09219D5728003EE20C /* CYXRatingStarMaskView.m */,
+			);
+			path = CYXRatingStarView;
+			sourceTree = "<group>";
+		};
+		55284B00219D54B5003EE20C /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				55284B01219D54DB003EE20C /* starUnselected@2x.png */,
+				55284B02219D54DB003EE20C /* starUnselected@3x.png */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +160,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55284B03219D54DB003EE20C /* starUnselected@2x.png in Resources */,
 				55284AF6219D5484003EE20C /* LaunchScreen.storyboard in Resources */,
+				55284B04219D54DB003EE20C /* starUnselected@3x.png in Resources */,
 				55284AF3219D5484003EE20C /* Assets.xcassets in Resources */,
 				55284AF1219D5481003EE20C /* Main.storyboard in Resources */,
 			);
@@ -141,8 +175,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55284B07219D54EF003EE20C /* CYXRatingStarView.m in Sources */,
 				55284AEE219D5481003EE20C /* ViewController.m in Sources */,
 				55284AF9219D5484003EE20C /* main.m in Sources */,
+				55284B0A219D5728003EE20C /* CYXRatingStarMaskView.m in Sources */,
 				55284AEB219D5481003EE20C /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,8 +322,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K999N3JYXU;
+				DEVELOPMENT_TEAM = RRQW8P957G;
 				INFOPLIST_FILE = CYXRatingStarViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,8 +340,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K999N3JYXU;
+				DEVELOPMENT_TEAM = RRQW8P957G;
 				INFOPLIST_FILE = CYXRatingStarViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
